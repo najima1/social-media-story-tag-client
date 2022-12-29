@@ -75,15 +75,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## It is a social media templete
 ## Feature
-1 ) User can create her post.
-2 ) User can upload image & text.
-3 ) User can see all post.
-4 ) An user can register & login.
-5 ) An user can login email & google.
-6 ) if user doesn't login he can't see all post.
-7 ) if user click any route he/she will redirect in login page.
-8 ) An user can like & love react.
-9 ) An user can see he about page.
+1) User can create her post.
+2) User can upload image & text.
+3) User can see all post.
+4) An user can register & login.
+5) An user can login email & google.
+6) if user doesn't login he can't see all post.
+7) if user click any route he/she will redirect in login page.
+8) An user can like & love react.
+9) An user can see he about page.
 
 ## Technology uses
 
