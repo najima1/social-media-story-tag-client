@@ -74,6 +74,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## It is a social media templete
+
+Demo link https://dreamy-begonia-5d25ab.netlify.app/
 ## Feature
 1) User can create her post.
 2) User can upload image & text.
