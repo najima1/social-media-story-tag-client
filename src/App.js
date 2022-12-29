@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { Toaster } from "react-hot-toast";
+import { RouterProvider } from "react-router-dom";
+import router from "./Component/Router/Router";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+import { useEffect, useState } from "react";
+import Window_spinner from "./Component/Pages/Window_spinner/Window_spinner";
+const queryClient = new QueryClient()
 
 function App() {
+  const [windowSpnr, setWindowSpnr] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setWindowSpnr(false)
+    }, 2000);
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="relative">
+
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+          <div><Toaster /></div>
+        </QueryClientProvider>
+
+        {windowSpnr && <div className="fixed w-full h-screen top-0 left-0 z-50">
+          <Window_spinner />
+        </div>}
+      </div>
+
+    </>
+
   );
 }
 
